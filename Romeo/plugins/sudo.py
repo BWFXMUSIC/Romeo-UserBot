@@ -57,7 +57,7 @@ async def rmsudo(client: Client, message: Message):
 @Client.on_message(filters.command(["sudolist", "sdl", "lsd"], ".") & (filters.me | filters.user(SUDO_USER)))
 async def sudolist(client: Client, message: Message):
     users = SUDO_USER
-    ex = await message.edit_text("`Processing...`")
+    ex = await message.edit_text("»ʙω͠ғ ᴍᴜsɪᴄ ғᴏʀ ʏᴏᴜ ᴍᴏɪ ʟᴜʙ 💌🎙️🕹️🥀🌷 ᴡᴀɪᴛ...")
     if not users:
         await ex.edit("No Users have been set yet")
         return
